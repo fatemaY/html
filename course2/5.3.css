@@ -1,0 +1,23 @@
+body {
+    background-color: #f8bad4; /* Use your desired color code */
+  }
+  body {
+    color: #333; 
+    font-family:'Times New Roman', Times; 
+  }
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-family:'Times New Roman', Times; 
+
+  }
+  .styled-image {
+    width: 20%;
+    height: 30%; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    margin :auto;
+  }
