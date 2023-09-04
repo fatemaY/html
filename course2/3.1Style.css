@@ -1,0 +1,22 @@
+
+
+#main-heading {
+  color: rgb(12, 9, 9);
+  font-size: 24px;
+}
+
+.content {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: red;
+}
+
+#box {
+  color: blue;
+  border: 20px ;
+  padding: 2px;
+}
