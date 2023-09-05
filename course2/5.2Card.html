@@ -1,50 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Basic Card with No Spacing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
   <style>
-    /* Style for the card container */
-    .card {
-      width: 500px; /* Set the width of the card */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+    .container {
+      width: 300px;
       height: 500px;
-      background-color: #f5f5cf;
-      border: 1px solid #eceae4;
-      padding: 20; /* Remove padding */
-      margin: 20; /* Remove margin */
-      box-shadow: 20px 20px 10px #272626; 
+      /* box-shadow: 3px 5px 55px 6px gray; */
+      background-color: bisque;
+      /* border: 50px solid black; */
+      /* margin-bottom: 30px; */
+     /* margin-right: 60px;
+      margin-bottom: 50px;
+      margin-left: 60px; */
 
+      /* margin: 30px 60px 50px 60px; */
+      /* margin: 50px auto; */
+      /* padding: 50px 60px 50px 60px; */
+      margin: auto;
     }
 
-    .styled-image {
-      width: 500%; /* Set the width of the image */
-      height: 50%; /* Maintain aspect ratio while adjusting width */
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    .title{
+      font-size: 24px;
+      font-weight: bold;
     }
-    /* Style for the card content */
-    .card-content {
-      padding: 50px; /* Add padding to the content if needed */
+
+    a{
+      color:coral
     }
-    
-    /* CSS for underlining text within span elements */
-    .underlined {
-      text-decoration: underline;
-      color: #b47d17;
-      border: 20px;
+    .miniContainer{
+      padding: 10px 15px;
+    }
+    .text{
+      margin: 20px 0px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img class="styled-image" src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/15/6c/7f.jpg" style="width: 100%"; style="height:500%";>
-    <span style="border: 100px">The Golan Heights </span> <br>
-    <span style="border: 10px"> Cool places to visit:</span> <br>
-    <p>
-        <span class="underlined">Hermon Mountain</span>
-        <span class="underlined">Sea Of Galilee</span>
-        <span class="underlined">Hula Valley</span>
-      </p>
-    </div>
-</div>
+  <div class="container">
+    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/15/6c/7f.jpg" style="width: 100%"; style="height:500%" width="100%" height="60%" alt="picture"/>
+    <div class="miniContainer">
+    <div class="title">The Golan Heights</div>
+    <div class="text">Cool places to visit</div>
+    <a href="#">Hermon Mountain</a>
+    <a href="#">Sea of Galile</a>
+    <a href="#">Hula</a>
+  </div>
+  </div>
 </body>
 </html>

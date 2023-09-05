@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .top-container {
+            background-color: #ee9827;
+            color: rgb(14, 13, 13);
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #070707;
+
+       }
+
+      .left-container {
+      display: flex;
+      float: left;
+      width: 40%; 
+      height: 20pc;
+      background-color: #44cf4f;
+      padding: 20px;
+      border: 1px solid #0f0f0f;
+      margin-top: 5pt;
+      }
+
+      .right-container {
+      display: flex;
+      float: right;
+      width: 49%; 
+      height: 20pc;
+      background-color: #9b4c80;
+      padding: 20px;
+      border: 1px solid #070707;
+      margin-top: 5pt;      
+
+      }
+
+      .last-container{
+      display:flex;
+      float:right;
+      width: 100%; /* Adjust the width as needed */
+      height: 20pt;
+      background-color: #3f05dd;
+      border: 1px solid #070707;
+      padding: 2px;
+      margin-top: 5pt;      
+      }
+
+        .container {
+            width: 200%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+
+        }
+        .relative{
+            position:relative;
+            top: 5px;
+            margin-left: 22pc ;
+        }
+        .side{
+            position:relative;
+            top: 5px;
+            margin-right: 22pc ;
+        }
+        .footer{
+            position:relative;
+            top: 5px;
+            margin-left: 50%;
+        }
+
+
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-container">
+            <div class="header">Header</div>
+          </div>
+        <div class="left-container">
+            <div class="side"> Side </div>
+          </div>
+        
+          <!-- Right container -->
+        <div class="right-container">
+            <div class="relative"> Main </div>
+          </div>
+
+        <div class="last-container">
+             <div class="footer"> Footer </div>
+          </div>
+          
+
+    </div>
+</body>
+</html>
