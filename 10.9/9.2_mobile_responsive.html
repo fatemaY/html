@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <style>
+    /* Common styles for columns */
+    h2{
+        margin:0 0; 
+    }
+    p{
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0%;
+    }
+    .column {
+      float: left;
+      width: 24%; /* Adjust the width as needed for your layout */
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: gray;
+      color: white;
+      margin-right: 5px;
+      margin-top: 5px;
+
+    }
+
+    /* Media query for screens with a maximum width of 768px */
+    @media (max-width: 768px) {
+      /* Change columns to stack on top of each other */
+      .column {
+        width: 100%;
+        float: none;
+
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="column">
+    <h2>First Item</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eius culpa repellat incidunt voluptatibus nesciunt veniam quisquam error id deserunt?</p>
+  </div>
+
+  <div class="column">
+    <h2>Second Item</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat incidunt blanditiis nostrum, fugiat quidem hic veritatis animi molestias quas voluptates?</p>
+  </div>
+
+  <div class="column">
+    <h2>Third Item</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolorem, iste distinctio molestias odit optio recusandae quod adipisci voluptatibus accusamus!</p>
+  </div>
+
+  <div class="column">
+    <h2>Fourth Item</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt optio a eveniet vitae rerum maiores totam expedita saepe commodi?</p>
+  </div>
+</body>
+</html>

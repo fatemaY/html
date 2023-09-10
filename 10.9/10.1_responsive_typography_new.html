@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Responsive Header</title>
+    <style>
+        body {
+            text-align: right; /* Align text to the right */
+            font-size: 20px;
+        }
+        /* Style for the header tag */
+        header {
+            display:flex;
+            width: 100vw;
+            height: 10vh;
+             /* Set font size relative to viewport width */
+            font-size: 1rem; /* Using rem unit (relative to the root font size) */
+        }
+        .details{
+            margin: 20px;
+            margin-top: 5px;
+        }
+        header .img{
+            margin-right: 5px;
+            margin-left: 20px;
+        }
+        @media (max-width: 1000px) {
+            header {
+                font-size: 6vw; /* Adjust font size for smaller screens */
+            }
+        }
+
+        /* Media query for even smaller screens */
+        @media (max-width: 480px) {
+            header {
+                font-size: 8vw; /* Further adjust font size for very small screens */
+            }
+            header.details{
+                display: none;
+            }
+            header.img{
+                display: block;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <ul class="details">
+                <h3>08-6852146 <i class="fas fa-phone"></i> </h3>
+                <h3> office@appleseeds.org.il<i class="fas fa-envelope"></i> </h3>
+                <h3>www.appleseeds.org.il<i class="fas fa-globe"></i> </h3>
+            </ul>
+        <ul class="details">
+            <h3>עמותת תפוח</h3>
+            <h3>טשרניחובסקי3,רמלה</h3>
+            <h3> מיקוד 7244402</h3>
+        </ul>
+
+        <img class="img" src="https://upload.wikimedia.org/wikipedia/he/e/e9/Appleseeds_LOGO_3_Hebrew.png" alt="Appleseeds Logo" height="200px" width="300px" >
+
+
+    </header>
+    
+
+</body>
+</html>
