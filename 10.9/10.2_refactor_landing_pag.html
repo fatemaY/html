@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>10.2</title>
   <style>
+     :root {
+            --main-bg-color:pink;
+            --text-color: #ffffff;
+        }
     * {
       box-sizing: border-box;
       margin: 0;
@@ -17,7 +21,7 @@
     }
 
     header {
-      background:linear-gradient(to right, #db86b8, #fff);
+      background-color: var(--main-bg-color);
       color: #fff;
       height: 100vh;
       text-align: center;
@@ -45,7 +49,6 @@
       text-align: center;
       padding: 2rem;
       padding-top: 5rem;
-      color: #fff;
       border: #fff;
       font-size: 20px;
     }
@@ -58,11 +61,11 @@
       padding: 0.75rem 2rem;
     }
     #about {
-        background:linear-gradient(to top , #831957, #fff);
+      background-color: var(--main-bg-color);
+
         height: 100vh;
         padding: 2rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color:rgb(253, 253, 253);
         text-align: center;
         font-style: italic;
 
@@ -72,14 +75,15 @@
     }
 
     #Hoppies {
-        background:linear-gradient(to left, #831957, #fff);
+      background-color: var(--main-bg-color);
+
         height: 100vh;
         padding: 2rem;
         color: #eeebed;
     }
     #contact {
+      background-color: var(--main-bg-color);
         text-align: center;
-        background:linear-gradient(to right, #db86b8, #fff);
         height: 100vh;
         padding: 2rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
