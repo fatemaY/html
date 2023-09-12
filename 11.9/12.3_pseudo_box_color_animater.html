@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.3_pseudo_box_color_animater</title>
+    <style>
+        /* Define styles for the main box */
+       .box {
+          width: 200px; /* Set the width of the main box */
+          height: 200px; /* Set the height of the main box */
+          background-color: #320d96; /* Set the background color of the main box */
+          position: relative; /* Create a positioning context for pseudo-element */
+          margin-top: 15%;
+          margin-left: 40%;
+        }
+
+/* Define styles for the pseudo-selector */
+       .box::after {
+          content: ""; /* Add content to the pseudo-selector */
+          position: absolute; /* Place it absolutely relative to its parent */
+          background-color: #e74c3c; /* Set a different background color for the pseudo-selector */
+          height: 100%; /* Make it full height of the parent box */
+          width: 50%; /* Make it half of the width of its parent */
+          top: 0; /* Align it to the top of the parent box */
+          left: 0; /* Align it to the left of the parent box */
+        }
+        .box:hover::after {
+          background-color: #881b6d; /* Change the background color of the pseudo-selector on hover */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12.1</title>
+    <style>
+        /* Define styles for the link */
+      .link {
+         text-decoration: none; /* Remove the default underline */
+         position: relative; /* Create a positioning context for the pseudo-element */
+         color: #582649; /* Set a color for the displayed href value (you can choose your own color) */
+
+       }
+
+/* Define styles for the after pseudo-element */
+     .link::before {
+         content: attr(href); /* Display the href attribute's value */
+         display: inline; /* Make it a block-level element (to put it on a new line) */
+         color: #582649; /* Set a color for the displayed href value (you can choose your own color) */
+         font-size: 14px; /* Set the font size (you can adjust this as needed) */
+       }
+
+    </style>
+</head>
+<body>
+    <a>Please visit this <span class="link"> website</span> </a><a class="link" href="(https://www.appleseeds.org.il/)"> <a>for more information.</a></a>
+</body>
+</html>

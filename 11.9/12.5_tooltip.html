@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neat Tooltip Example</title>
+    <style>
+        /* Define styles for the tooltip container */
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Define styles for the tooltip */
+.tooltip {
+    content: attr(This is a badass tooltip);
+    display: none;
+    position: absolute;
+    background-color: #e3f733;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events:all; /* Allow clicks to pass through */
+    top: 100%; /* Position below the trigger element */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+
+/* Show the tooltip when hovering over the trigger element */
+.tooltip-container:hover .tooltip {
+    display: block;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="tooltip-container">
+        <p>
+            Lorem ipsum dolor  sit amet consectetur adipisicing elit. Praesentium quis ea ut expedita labore ipsam 
+            recusandae doloribus laudantium, laboriosam architecto quaerat ipsa <a href="tooltip" data-tooltip="This is a badass tooltip">
+            corrupti</a>, ratione nostrum iusto 
+            pariatur maiores ullam cumque, totam perspiciatis nobis soluta excepturi! Sint commodi illum deleniti 
+            dolorum? Unde amet est facere, architecto ut a consequuntur? Modi optio sint nostrum molestiae enim 
+            nesciunt, debitis ad, ullam earum ex vitae, alias ducimus officia. Rerum ipsa porro excepturi, 
+            qui possimus fuga consectetur odio facere officiis nemo cum id, similique earum?
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate cupiditate blanditiis fugiat
+             enim animi veritatis deserunt magnam, earum omnis ducimus, minima error vero sequi ex et debitis 
+             repellendus pariatur vitae quas ipsa sed. Optio aspernatur esse quaerat. Quidem eveniet culpa
+             ratione incidunt possimus vitae fugiat, voluptate laboriosam iure quam dolorem porro ipsum
+             minima alias blanditiis unde perspiciatis earum reprehenderit quia, iusto obcaecati molestias.
+             Quia quaerat veniam tenetur voluptatem aliquid facilis consequuntur? Ipsa ut corrupti
+             repudiandae quibusdam ullam, maxime maiores laboriosam.
+        </p>
+
+        <span class="tooltip">This is a badass tooltip.</span>
+
+
+    </div>
+</body>
+</html>
