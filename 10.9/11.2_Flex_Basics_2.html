@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Example</title>
+  <style>
+    /* CSS for the container */
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw; /* Set a fixed height for the container */
+      margin:0px;
+      justify-content:center;
+      background-color: rgb(221, 194, 189);
+    }
+
+    /* CSS for each box */
+    .box {
+      margin-top: 20%;
+      width: 15%;
+      height: 20%; /* Take the full height of the container */
+      text-align: left; /* Center the content horizontally */
+      color: black;
+    }
+
+    /* Box colors */
+    .box:nth-child(1) {
+      background-color: #156126; /* Orange */
+    }
+
+    .box:nth-child(2) {
+      background-color: #2213ad; /* Green */
+    }
+
+    .box:nth-child(3) {
+      background-color: #b61414; /* Blue */
+    }
+    p{
+      margin-left: 10px;
+    }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+  </div>
