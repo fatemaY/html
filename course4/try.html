@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    /* CSS for styling the form */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    .btn-container {
+      text-align: center;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location">
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <label for="topic">Topic:</label>
+    <select id="topic" name="topic">
+      <option value="inquiry">General Inquiry</option>
+      <option value="feedback">Feedback</option>
+      <option value="support">Technical Support</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <div class="btn-container">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>
+
